@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     path: "/",
     element:  (
       <PanelLayout
-        headerPanel={<Header title="Chuck Norris Jokes" />}
+        headerPanel={<Header title="onXmaps Jokes" />}
         contentPanel={<Outlet />}
         bottomPanel={<Bottom />}
       />
