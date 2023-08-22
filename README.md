@@ -34,5 +34,5 @@ The following secrets are required to be set in the GitHub repository:
 
 The following variables are required to be set in the GitHub repository:
 
-- AWS_BUCKET_NAME
+- S3_BUCKET_NAME
 - AWS_REGION
