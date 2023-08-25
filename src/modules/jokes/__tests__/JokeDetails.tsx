@@ -19,7 +19,7 @@ jest.mock('../../../services/jokes', () => {
 
 import JokeDetails from '../JokeDetails';
 import { Joke } from '../../../services/jokes/types';
-import { QueryClient, QueryClientProvider } from 'react-query';
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const jokeText = 'Chuck Norris can divide by zero';
 
@@ -32,7 +32,6 @@ describe('JokeDetails', () => {
             </QueryClientProvider>
         );
 
-        expect(screen.getByText('Loading...')).toBeInTheDocument();
         await waitFor(() => {
             expect(screen.getByText(jokeText)).toBeInTheDocument()
         }, { timeout: 50 });

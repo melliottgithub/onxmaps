@@ -3,6 +3,7 @@ import Button from "../components/Button";
 
 export default function Bottom() {
   const navigate = useNavigate();
+  const timestamp = new Date().getTime();
 
   return (
     <div className="fixed bottom-6 left-0 right-0">
@@ -13,7 +14,7 @@ export default function Bottom() {
           />
           <Button
             label="Random"
-            onClick={() => { navigate('/Random') } }
+            onClick={() => { navigate(`/random/${timestamp}`) } }
           />
       </div>
     </div>

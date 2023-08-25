@@ -1,5 +1,5 @@
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { QueryClient, QueryClientProvider } from 'react-query';
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Search from '../pages/Search';
 import Random from '../pages/Random';
 import Joke from '../pages/Joke';
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
       },
       {
         index: true,
-        path: "random",
+        path: "random/:timestamp",
         element: <Random />
       },
       {
